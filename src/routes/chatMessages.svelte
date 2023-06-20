@@ -1,5 +1,5 @@
 <script>
-	import { chatMessage, friendProfile } from './stores';
+	import { chatMessage } from './stores';
 
 	let chatmessages = [];
 
@@ -30,7 +30,6 @@
 <style type="scss">
 	/* general styles */
 	main {
-		width: 48vw;
 		background: rgba(255, 255, 255, 0.6);
 		border: 1px dashed rgba(205, 205, 205, 0.477);
 		font-family: 'Noto Sans Mono';
@@ -40,7 +39,7 @@
 	/* large screens */
 	@media (min-width: 1025px) {
 		main {
-			width: 100%;
+			width: 48vw;
 			height: 60vh;
 			max-height: 100vh;
 		}

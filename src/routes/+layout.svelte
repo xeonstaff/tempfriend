@@ -12,11 +12,14 @@
 	chatMessage.subscribe((x) => (x ? '' : dataLoaded.update((state) => (state = true))));
 
 	//handles initial & reloading loading of app
+	//don't judge me for putting the prompt here this was a nightmare to figure out
 	async function handleLoad() {
 		//loads a new friend profile
-		await startingPrompt().then((botrole) => {
-			chatMessage.set(botrole);
-		});
+		const profile = await fetchFriendInfo();
+		chatMessage.set(`
+			Assume the role of [${profile.friendname}], a ${profile.age}-year-old ${profile.profession} 
+			from ${profile.location}. You're very flirty, and don't like to talk about work much. Don't break character! // [User]: hello! // [${profile.friendname}]:
+		`)
 	}
 
 	onMount(handleLoad);

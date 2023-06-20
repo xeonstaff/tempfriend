@@ -15,12 +15,6 @@ export const friendProfile = writable({
 
 export const profileLoaded = writable(false);
 
-const profile = await fetchFriendInfo();
-export const chatMessage = writable(
-	`
-		Assume the role of [${profile.friendname}], a ${profile.age}-year-old ${profile.profession} 
-		from ${profile.location}. You're very flirty, and don't like to talk about work much. Don't break character! // [User]: hello! // [${profile.friendname}]:
-    `
-);
+export const chatMessage = writable('');
 
 export const temperature = writable(0);
