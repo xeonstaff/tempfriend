@@ -34,7 +34,7 @@
 		margin: 0;
 		padding: 0;
 		line-height: 14px;
-				padding-top: 4px;
+		padding-top: 4px;
 	}
 
 	.number {

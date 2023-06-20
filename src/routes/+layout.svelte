@@ -43,7 +43,7 @@
 				</div>
 			</Navbar>
 			<div class="app">
-			<slot />
+				<slot />
 			</div>
 		</AppShell>
 	{/if}
@@ -54,11 +54,11 @@
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&family=Noto+Sans+Mono:wght@200;400;700&display=swap');
 	@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
-		/* loader styles */
-			.loadscreen {
-			animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
-			animation-duration: 6s; /* don't forget to set a duration! */
-		}
+	/* loader styles */
+	.loadscreen {
+		animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
+		animation-duration: 6s; /* don't forget to set a duration! */
+	}
 
 	/* gradient background colors */
 	html,
@@ -96,38 +96,35 @@
 		}
 	}
 
-
 	/* general styles */
 
-	.navbar{
-		grid-area: 'navbar'
+	.navbar {
+		grid-area: 'navbar';
 	}
 
-		.app{
-		grid-area: 'app'
+	.app {
+		grid-area: 'app';
 	}
-	
-	
-	h1{
+
+	h1 {
 		font-size: 20px;
 	}
-		.header {
-			width: 100vw;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
+	.header {
+		width: 100vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 
-		.header__text {
-			padding: 16px 0px;
-			font-size: 20px;
-			color: #f2f2f2;
-			display: flex;
-			justify-content: center;
-			position: relative;
-			top: -15px;
-			background-color: #0d0d0d;
-			border: 2px solid black;
-		}
-	
+	.header__text {
+		padding: 16px 0px;
+		font-size: 20px;
+		color: #f2f2f2;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		top: -15px;
+		background-color: #0d0d0d;
+		border: 2px solid black;
+	}
 </style>

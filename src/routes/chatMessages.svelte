@@ -52,13 +52,11 @@
 			width: 100%;
 			height: 55vh;
 			max-height: 100vh;
-			
 		}
-
 	}
 
-		/* lil screens */
-		@media (max-width: 800px) {
+	/* lil screens */
+	@media (max-width: 800px) {
 		main {
 			width: 100%;
 			height: 33vh;

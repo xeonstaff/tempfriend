@@ -44,7 +44,6 @@
 	@media (min-width: 1025px) {
 		body {
 			display: block;
-
 		}
 		.topsection {
 			width: 100%;
@@ -57,7 +56,7 @@
 			padding: 0px 5px 5px 10px;
 			border-radius: 5px;
 			border: 1px solid black;
-			background-color: rgb(230, 236, 237, .5);
+			background-color: rgb(230, 236, 237, 0.5);
 			z-index: 2;
 		}
 
@@ -72,7 +71,7 @@
 
 	/* medium screens */
 	@media (min-width: 801px) and (max-width: 1024px) {
-	body {
+		body {
 			display: block;
 		}
 		.topsection {
@@ -86,13 +85,12 @@
 		}
 
 		.chatmessages {
-
 		}
 		.bottomsection {
 			padding: 0px 5px 5px 10px;
 			border-radius: 5px;
 			border: 1px solid black;
-			background-color: rgb(230, 236, 237, .5);
+			background-color: rgb(230, 236, 237, 0.5);
 			z-index: 2;
 		}
 
@@ -130,7 +128,7 @@
 			padding: 0px 5px 5px 10px;
 			border-radius: 5px;
 			border: 1px solid black;
-			background-color: rgb(230, 236, 237, .5);
+			background-color: rgb(230, 236, 237, 0.5);
 			z-index: 2;
 		}
 
@@ -142,5 +140,4 @@
 			grid-area: input;
 		}
 	}
-
 </style>

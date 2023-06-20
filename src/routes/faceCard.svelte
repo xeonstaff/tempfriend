@@ -27,7 +27,7 @@
 </script>
 
 <main>
-	<Card shadow="md" padding="sm" >
+	<Card shadow="md" padding="sm">
 		<div class="card">
 			<Card.Section padding="sm">
 				<div class="image" style="height: {picheight}">
@@ -39,7 +39,7 @@
 						height={picheight}
 						alt="my very real friend"
 						radius={5}
-						color='black'
+						color="black"
 					/>
 				</div>
 			</Card.Section>
@@ -82,7 +82,7 @@
 		display: flex;
 	}
 
-	.image{
+	.image {
 		display: flex;
 		align-items: center;
 	}
