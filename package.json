@@ -37,6 +37,7 @@
 		"latest": "^0.2.0",
 		"node-sass": "^9.0.0",
 		"openai": "^3.2.1",
+		"pnpx": "^0.0.1",
 		"sass": "^1.62.1",
 		"svelte-preprocess": "^5.0.4"
 	}
