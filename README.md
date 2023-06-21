@@ -14,7 +14,6 @@ Friend info from randomuser.me & random-data-api.co
 Chhat features: OpenAI API
 Components: Svelte UI
 Loading Icon: Codepen User Bilal.Rizwaan
-Temp Slider:
 
 ## Contributions
 
