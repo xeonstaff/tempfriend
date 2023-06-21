@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@svelteuidev/composables": "^0.12.1",
 		"@svelteuidev/core": "^0.12.1",
 		"animate.css": "^4.1.1",
