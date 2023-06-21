@@ -6,8 +6,6 @@
 	import { startingPrompt } from '../lib/startingPrompt.js';
 	import 'animate.css';
 
-	export const prerender = true;
-
 	//lets the rest of the app know that the friend's info has been loaded
 	let loadpage = false;
 	dataLoaded.subscribe((val) => (loadpage = val));
