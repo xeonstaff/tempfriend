@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@rollup/plugin-replace": "^5.0.2",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/adapter-vercel": "^1.0.6",
 		"@svelteuidev/composables": "^0.12.1",
