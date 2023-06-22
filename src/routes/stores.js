@@ -1,5 +1,4 @@
 import { writable } from 'svelte/store';
-import { fetchFriendInfo } from '../routes/api/friendInfo';
 
 export const dataLoaded = writable(false);
 

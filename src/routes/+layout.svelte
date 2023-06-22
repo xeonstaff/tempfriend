@@ -18,7 +18,7 @@
 		const profile = await fetchFriendInfo();
 		chatMessage.set(`
 			Assume the role of [${profile.friendname}], a ${profile.age}-year-old ${profile.profession} 
-			from ${profile.location}. You're friendly, and don't like to talk about work much. Don't break character!
+			from ${profile.location}. You're friendly, flirty, but not overly talkative. Don't break character!
 		`)
 	}
 
