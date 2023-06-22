@@ -2,6 +2,7 @@ import 'isomorphic-fetch';
 import { chatMessage, temperature } from '../stores.js';
 
 const url = 'https://api.openai.com/v1/chat/completions';
+const API_KEY = import.meta.env.VITE_OPENAI_API_KEY
 
 let temp = 0;
 temperature.subscribe((x) => {
@@ -22,7 +23,7 @@ export async function chatBot() {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
-			Authorization: `Bearer ${VITE_OPENAI_API_KEY}`
+			Authorization: `Bearer ${API_KEY}`
 		},
 		body: JSON.stringify(data)
 	})
