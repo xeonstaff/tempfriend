@@ -48,7 +48,7 @@
 	/* medium screens */
 	@media (min-width: 801px) and (max-width: 1024px) {
 		main {
-			width: 100%;
+			width: 48vw;
 			height: 55vh;
 			max-height: 100vh;
 		}
