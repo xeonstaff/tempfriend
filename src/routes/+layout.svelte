@@ -1,4 +1,18 @@
 <script lang="ts">
+   //hack to load env in production -->
+	import process from "process";
+	import { Buffer } from "buffer";
+	import EventEmitter from "events";
+	import { browser } from "$app/environment";
+
+	if(browser) {
+		window.Buffer = Buffer;
+		window.process = process;
+		(window as any).EventEmitter = EventEmitter;
+		window.global = window
+	}
+	//<-------------------- end hack 
+
 	import { AppShell, Navbar, Header } from '@svelteuidev/core';
 	import Loader from './loader.svelte';
 	import { dataLoaded, chatMessage } from './stores';
