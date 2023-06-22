@@ -4,6 +4,7 @@
 	import { dataLoaded, chatMessage } from './stores';
 	import { onMount } from 'svelte';
 	import { startingPrompt } from '../lib/startingPrompt.js';
+	import { fetchFriendInfo } from '../routes/api/friendInfo';
 	import 'animate.css';
 
 	//lets the rest of the app know that the friend's info has been loaded
@@ -11,14 +12,13 @@
 	dataLoaded.subscribe((val) => (loadpage = val));
 	chatMessage.subscribe((x) => (x ? '' : dataLoaded.update((state) => (state = true))));
 
-	//handles initial & reloading loading of app
-	//don't judge me for putting the prompt here this was a nightmare to figure out
+	//handles initial loading of bot role 
 	async function handleLoad() {
 		//loads a new friend profile
 		const profile = await fetchFriendInfo();
 		chatMessage.set(`
 			Assume the role of [${profile.friendname}], a ${profile.age}-year-old ${profile.profession} 
-			from ${profile.location}. You're very flirty, and don't like to talk about work much. Don't break character! // [User]: hello! // [${profile.friendname}]:
+			from ${profile.location}. You're friendly, and don't like to talk about work much. Don't break character!
 		`)
 	}
 
