@@ -1,4 +1,5 @@
 import 'isomorphic-fetch';
+import process from "process";
 import { chatMessage, temperature } from '../stores.js';
 
 const url = 'https://api.openai.com/v1/chat/completions';
