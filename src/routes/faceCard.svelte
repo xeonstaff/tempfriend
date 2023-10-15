@@ -1,5 +1,5 @@
 <script>
-	import { Card, Image, Text, Divider } from '@svelteuidev/core';
+	import { Card, Image, Text } from '@svelteuidev/core';
 	import { friendProfile } from './stores.js';
 	import { onMount } from 'svelte';
 
@@ -105,7 +105,7 @@
 			padding-left: 20px;
 		}
 		.card {
-			height: 100%;
+			height: 57vh;
 			display: flex;
 		}
 		.text {
@@ -127,7 +127,7 @@
 	/* medium screens */
 	@media (min-width: 801px) and (max-width: 1024px) {
 		.card {
-			max-height: 70vh;
+			height: 52vh;
 		}
 		.image {
 			width: 220px;

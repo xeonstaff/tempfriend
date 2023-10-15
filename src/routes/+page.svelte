@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<title>Temp友</title>
+	<div class="underline"></div>
 	<meta name="robots" content="noindex nofollow" />
 </svelte:head>
 
@@ -40,6 +41,13 @@
 		grid-template-areas: 'topsection' 'bottomsection';
 	}
 
+	.underline{
+		width: 100vw;
+		color: white;
+		z-index: 1000;
+		border-bottom: 1px solid white;
+	}
+
 	/* large screens */
 	@media (min-width: 1025px) {
 		body {
@@ -47,7 +55,7 @@
 		}
 		.topsection {
 			width: 100%;
-			margin-top: 7vh;
+			margin-top: 8vh;
 			display: flex;
 			flex-direction: row;
 		}
@@ -76,7 +84,7 @@
 		}
 		.topsection {
 			width: 100%;
-			margin-top: 7vh;
+			margin-top: 8vh;
 			display: flex;
 			flex-direction: row;
 		}
@@ -112,7 +120,7 @@
 		}
 		.topsection {
 			width: 100%;
-			margin-top: 50px;
+			margin-top: 8vh;
 			display: flex;
 			flex-direction: column;
 		}

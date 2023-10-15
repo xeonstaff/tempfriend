@@ -11,7 +11,7 @@
 </script>
 
 <div>
-	<p>randomness:&nbsp;&nbsp;<span class="number">{value}</span></p>
+	<p>chat randomness:&nbsp;&nbsp;<span class="number">{value}</span></p>
 
 	<input
 		type="range"

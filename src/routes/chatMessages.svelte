@@ -58,8 +58,7 @@
 	@media (max-width: 800px) {
 		main {
 			width: 100%;
-			height: 33vh;
-			max-height: 80vh;
+			height: 41vh;
 		}
 	}
 
