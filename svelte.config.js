@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-vercel';
-import {} from 'dotenv/config'
+require('dotenv').config()
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
