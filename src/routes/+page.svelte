@@ -7,7 +7,6 @@
 
 <svelte:head>
 	<title>Temp友</title>
-	<div class="underline"></div>
 	<meta name="robots" content="noindex nofollow" />
 </svelte:head>
 
@@ -39,13 +38,6 @@
 		margin: 0px;
 		display: grid;
 		grid-template-areas: 'topsection' 'bottomsection';
-	}
-
-	.underline{
-		width: 100vw;
-		color: white;
-		z-index: 1000;
-		border-bottom: 1px solid white;
 	}
 
 	/* large screens */

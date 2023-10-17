@@ -6,7 +6,9 @@ But they're only temporary.
 
 ## APIs
 
-This app uses several APIs; the OpenAI API is the one you'll need a key for.
+This app uses several APIs; the OpenAI API is the one you'll need a key for. 
+
+Please modify `.env.example` with your own key for development purposes.
 
 ## Tools
 
@@ -17,7 +19,7 @@ Loading Icon: Codepen User Bilal.Rizwaan
 
 ## Contributions
 
-Please contribute :) Open to all MRs.
+Please contribute! Open to all MRs.
 
 ## About
 
