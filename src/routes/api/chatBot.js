@@ -1,12 +1,11 @@
 import 'isomorphic-fetch';
+import process from "process";
 import { chatMessage, temperature } from '../stores.js';
-import {} from 'dotenv/config'
 
 const url = 'https://api.openai.com/v1/chat/completions';
-const API_KEY = process.env.VITE_OPENAI_API_KEY
 
-// for use in development 
-// const API_KEY = import.meta.env.VITE_OPENAI_API_KEY 
+//process.env for Vercel deployment; import.meta for Vite development
+const API_KEY = process.env ? process.env.VITE_OPENAI_API_KEY : import.meta.env.VITE_OPENAI_API_KEY
 
 let temp = 0;
 temperature.subscribe((x) => {
