@@ -7,6 +7,7 @@ const url = 'https://api.openai.com/v1/chat/completions';
 //process.env for Vercel deployment; import.meta for Vite development
 const API_KEY = process.env.VITE_OPENAI_API_KEY 
 // const API_KEY =  import.meta.env.VITE_OPENAI_API_KEY
+console.log(API_KEY)
 
 let temp = 0;
 temperature.subscribe((x) => {
